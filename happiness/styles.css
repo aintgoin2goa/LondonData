@@ -1,0 +1,46 @@
+body, html, svg{
+	margin:0;
+	padding:0;
+
+}
+
+ul, li{
+	margin:0;
+	padding:0;
+	list-style-type: none;
+}
+
+#graph{
+	position:absolute;
+	top:20px;
+	left:20px;
+	right:20px;
+	bottom:20px;
+	border-left:1px solid #000;
+	border-bottom:1px solid #000;
+	font-size:0;
+}
+
+#graph ul{
+	position:absolute;
+	bottom:0;
+	left:0;
+	right:0;
+	top:0;
+}
+
+rect{
+	fill:#999;
+
+}
+
+.column span{
+	font-family: Arial;
+	font-size:30px;
+	color:#AAA;
+	font-weight: bold;
+	-webkit-transform: rotate(-90deg) translate(1.5em,-1em);
+	position:absolute;
+	bottom:10px;
+	white-space: nowrap;
+}

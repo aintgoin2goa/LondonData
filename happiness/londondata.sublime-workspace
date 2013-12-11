@@ -1,0 +1,1310 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"l",
+				"length"
+			],
+			[
+				"font",
+				"font-family"
+			],
+			[
+				"v",
+				"vertical-align"
+			],
+			[
+				"list",
+				"list-style-type"
+			],
+			[
+				"in",
+				"inline-block"
+			],
+			[
+				"j",
+				"jsonData"
+			],
+			[
+				"Mo",
+				"MockDocument"
+			],
+			[
+				"g",
+				"GridLayout"
+			],
+			[
+				"im",
+				"image"
+			],
+			[
+				"tog",
+				"toggleUploadMode"
+			],
+			[
+				"re",
+				"resultToObject"
+			],
+			[
+				"pr",
+				"projectModel"
+			],
+			[
+				"Ap",
+				"AppInterface"
+			],
+			[
+				"footer",
+				"FooterPresenter"
+			],
+			[
+				"cre",
+				"createModel"
+			],
+			[
+				"on",
+				"OnCreateProject"
+			],
+			[
+				"O",
+				"OnModelChange"
+			],
+			[
+				"Project",
+				"ProjectPresenter"
+			],
+			[
+				"p",
+				"project"
+			],
+			[
+				"fo",
+				"foot"
+			],
+			[
+				"foo",
+				"footer"
+			],
+			[
+				"up",
+				"upld"
+			],
+			[
+				"upl",
+				"upload"
+			],
+			[
+				"i",
+				"image"
+			],
+			[
+				"po",
+				"proj"
+			],
+			[
+				"Mock",
+				"MockProjectPresenter"
+			],
+			[
+				"toHaveBeen",
+				"toHaveBeenCalled"
+			],
+			[
+				"toH",
+				"toHaveBeenCalled"
+			],
+			[
+				"s",
+				"showView"
+			],
+			[
+				"proj",
+				"ProjectView"
+			],
+			[
+				"cr",
+				"createApp"
+			],
+			[
+				"A",
+				"AppInterface"
+			],
+			[
+				"exp",
+				"expected"
+			],
+			[
+				"ex",
+				"expected"
+			],
+			[
+				"M",
+				"MockZeroClipboard"
+			],
+			[
+				"no",
+				"noFlash"
+			],
+			[
+				"e",
+				"expected"
+			],
+			[
+				"set",
+				"setDefaults"
+			],
+			[
+				"MockZe",
+				"MockZeroClipboardObject"
+			],
+			[
+				"new",
+				"newContent"
+			],
+			[
+				"n",
+				"newContent"
+			],
+			[
+				"hi",
+				"hideActivityIndicator"
+			],
+			[
+				"t",
+				"template"
+			],
+			[
+				"S",
+				"SassViewInterface"
+			],
+			[
+				"c",
+				"callback"
+			],
+			[
+				"m",
+				"Module"
+			],
+			[
+				"w",
+				"worker"
+			],
+			[
+				"Pr",
+				"ProjectModel"
+			],
+			[
+				"ar",
+				"argsForCall"
+			],
+			[
+				"wo",
+				"workerComplete"
+			],
+			[
+				"r",
+				"ready"
+			],
+			[
+				"wor",
+				"workerAction"
+			],
+			[
+				"sa",
+				"sassTemplate"
+			],
+			[
+				"ini",
+				"initializeWorker"
+			],
+			[
+				"d",
+				"dataURI"
+			],
+			[
+				"get",
+				"generateSass"
+			],
+			[
+				"Action",
+				"ActionResult"
+			],
+			[
+				"pa",
+				"params"
+			],
+			[
+				"Ac",
+				"ActionResult"
+			],
+			[
+				"post",
+				"postMessage"
+			],
+			[
+				"erro",
+				"errorMessage"
+			],
+			[
+				"li",
+				"listener"
+			],
+			[
+				"prop",
+				"property"
+			],
+			[
+				"MockW",
+				"MockWorker"
+			],
+			[
+				"MockWorker",
+				"MockWorkerObject"
+			],
+			[
+				"ca",
+				"callback"
+			],
+			[
+				"b",
+				"beginWorker"
+			],
+			[
+				"pro",
+				"project"
+			],
+			[
+				"de",
+				"dependencies"
+			],
+			[
+				"Fo",
+				"FooterViewInterface"
+			],
+			[
+				"On",
+				"OnSwitchProject"
+			],
+			[
+				"pre",
+				"presenter"
+			],
+			[
+				"F",
+				"FooterPresenterInterface"
+			],
+			[
+				"tr",
+				"trigger"
+			],
+			[
+				"Sele",
+				"select"
+			],
+			[
+				"load",
+				"loadProject"
+			],
+			[
+				"toBe",
+				"toBeHidden"
+			],
+			[
+				"crate",
+				"createProject"
+			],
+			[
+				"remove",
+				"removeEvents"
+			],
+			[
+				"add",
+				"addEvents"
+			],
+			[
+				"con",
+				"context"
+			],
+			[
+				"image",
+				"Image"
+			],
+			[
+				"ad",
+				"adapter"
+			],
+			[
+				"Pro",
+				"ProjectViewInterface"
+			],
+			[
+				"create",
+				"createProject"
+			],
+			[
+				"cb",
+				"Cbqia1VCetlkkb1MY2UY5efKnwVdkMn"
+			],
+			[
+				"Moc",
+				"MockLocalStorage"
+			],
+			[
+				"P",
+				"ProjectPresenterInterface"
+			],
+			[
+				"MockP",
+				"MockProjectModel"
+			],
+			[
+				"expect",
+				"expectedKey"
+			],
+			[
+				"to",
+				"toHaveBeenCalledWith"
+			],
+			[
+				"loa",
+				"loadAll"
+			],
+			[
+				"la",
+				"loadOne"
+			],
+			[
+				"k",
+				"keyParts"
+			],
+			[
+				"L",
+				"LocalStorageAdapterInterface"
+			],
+			[
+				"a",
+				"adapter"
+			],
+			[
+				"ev",
+				"eventData"
+			],
+			[
+				"mo",
+				"modelInterface"
+			],
+			[
+				"Ad",
+				"AdapterInterface"
+			],
+			[
+				"upload",
+				"uploadView"
+			],
+			[
+				"V",
+				"ViewInterface"
+			],
+			[
+				"Up",
+				"UploadViewInterface"
+			],
+			[
+				"call",
+				"callback"
+			],
+			[
+				"MockF",
+				"MockFileModel"
+			],
+			[
+				"U",
+				"UploadPresenterInterface"
+			],
+			[
+				"Fil",
+				"FileReader"
+			],
+			[
+				"se",
+				"setTimeout"
+			],
+			[
+				"fil",
+				"fileType"
+			],
+			[
+				"has",
+				"hasImage"
+			],
+			[
+				"id",
+				"idText"
+			],
+			[
+				"ed",
+				"editIDEnd"
+			],
+			[
+				"enlarge",
+				"enlargeImage"
+			],
+			[
+				"h",
+				"hasRendered"
+			],
+			[
+				"old",
+				"oldValue"
+			],
+			[
+				"_",
+				"_dataURI"
+			],
+			[
+				"I",
+				"ImageViewInterface"
+			],
+			[
+				"mock",
+				"mockView"
+			],
+			[
+				"em",
+				"emptyProp"
+			],
+			[
+				"com",
+				"compileTemplate"
+			],
+			[
+				"is",
+				"isCompiledTemplate"
+			],
+			[
+				"ren",
+				"renderer"
+			],
+			[
+				"cal",
+				"callbacks"
+			],
+			[
+				"MockI",
+				"MockImageView"
+			],
+			[
+				"and",
+				"andCallThrough"
+			],
+			[
+				"JSON",
+				"jsonString"
+			],
+			[
+				"data",
+				"dataURI"
+			],
+			[
+				"ch",
+				"checkForExistingID"
+			],
+			[
+				"event",
+				"eventContext"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"file": "index.html",
+			"settings":
+			{
+				"buffer_size": 711,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "happiness.js",
+			"settings":
+			{
+				"buffer_size": 494,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "styles.css",
+			"settings":
+			{
+				"buffer_size": 552,
+				"line_ending": "Windows"
+			}
+		}
+	],
+	"build_system": "Schema Grunt Build",
+	"command_palette":
+	{
+		"height": 311.0,
+		"selected_items":
+		[
+			[
+				"Package Control: ",
+				"Package Control: Install Package"
+			],
+			[
+				"m",
+				"Markdown Preview: preview in Browser"
+			],
+			[
+				"ma",
+				"Markdown Preview: preview in Browser"
+			],
+			[
+				"mark",
+				"Markdown Preview: preview in Browser"
+			]
+		],
+		"width": 400.0
+	},
+	"console":
+	{
+		"height": 125.0
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"file_history":
+	[
+		"/C/Users/paul.wilson/Documents/GitHub/boilerplate/dev/index.html",
+		"/C/Users/paul.wilson/Documents/GitHub/boilerplate/package.json",
+		"/C/Users/paul.wilson/Documents/GitHub/boilerplate/londondata.sublime-project",
+		"/C/Users/paul.wilson/Documents/GitHub/LondonData/.gitignore",
+		"/C/Users/paul.wilson/Documents/GitHub/LondonData/package.json",
+		"/C/Users/paul.wilson/Documents/GitHub/LondonData/gruntfile.js",
+		"/C/Users/paul.wilson/Desktop/test.ts",
+		"/C/Users/paul.wilson/Desktop/test.js",
+		"/C/Users/paul.wilson/Documents/GitHub/DataURIManager/src/scripts/models/project.model.js",
+		"/C/Users/paul.wilson/AppData/Roaming/Sublime Text 2/Packages/Package Control/Package Control.sublime-settings",
+		"/C/Users/paul.wilson/AppData/Roaming/Sublime Text 2/Packages/User/Package Control.sublime-settings",
+		"/C/Users/paul.wilson/AppData/Roaming/Sublime Text 2/Packages/TypeScript Compiler/TypeScript Compiler.sublime-settings",
+		"/C/Users/paul.wilson/Documents/GitHub/DataURIManager/src/scripts/adapters/localstorage.adapter.js",
+		"/C/Users/paul.wilson/Documents/GitHub/DataURIManager/src/styles/scss/global.scss",
+		"/C/Users/paul.wilson/Documents/GitHub/DataURIManager/src/styles/scss/typography.scss",
+		"/C/Users/paul.wilson/Documents/GitHub/DataURIManager/src/styles/scss/fonts/source-sans.scss",
+		"/C/Users/paul.wilson/Documents/GitHub/DataURIManager/src/styles/scss/screen.scss",
+		"/C/Users/paul.wilson/Documents/GitHub/DataURIManager/src/styles/scss/elements.scss",
+		"/C/Users/paul.wilson/Documents/GitHub/DataURIManager/src/styles/scss/footer.scss",
+		"/C/Users/paul.wilson/Documents/GitHub/DataURIManager/src/styles/scss/projectView.scss",
+		"/C/Users/paul.wilson/Documents/GitHub/DataURIManager/src/scripts/app.js",
+		"/C/Users/paul.wilson/Documents/GitHub/DataURIManager/src/scripts/views/project.view.js",
+		"/C/Users/paul.wilson/Documents/GitHub/DataURIManager/src/index.html",
+		"/C/Users/paul.wilson/Documents/GitHub/DataURIManager/test/spec/project.view.spec.js",
+		"/C/Users/paul.wilson/Documents/GitHub/DataURIManager/src/scripts/presenters/footer.presenter.js",
+		"/C/Users/paul.wilson/Documents/GitHub/DataURIManager/src/scripts/presenters/project.presenter.js",
+		"/C/Users/paul.wilson/Documents/GitHub/DataURIManager/src/scripts/views/footer.view.js",
+		"/C/Users/paul.wilson/Documents/GitHub/DataURIManager/test/spec/app.spec.js",
+		"/C/Users/paul.wilson/Documents/GitHub/DataURIManager/test/mocks.js",
+		"/C/Users/paul.wilson/Documents/GitHub/DataURIManager/test/index.html",
+		"/C/Users/paul.wilson/Documents/GitHub/DataURIManager/src/app.js",
+		"/C/Users/paul.wilson/Documents/GitHub/DataURIManager/test/spec/project.presenter.spec.js",
+		"/C/Users/paul.wilson/Documents/GitHub/DataURIManager/src/presenters/project.presenter.js",
+		"/C/Users/paul.wilson/Documents/GitHub/DataURIManager/src/models/project.model.js",
+		"/C/Users/paul.wilson/Documents/GitHub/DataURIManager/src/models/image.model.js",
+		"/C/Users/paul.wilson/Documents/GitHub/DataURIManager/src/views/project.view.js",
+		"/C/Users/paul.wilson/Documents/GitHub/DataURIManager/test/spec/sass.view.spec.js",
+		"/C/Users/paul.wilson/Documents/GitHub/DataURIManager/src/views/sass.view.js",
+		"/C/Users/paul.wilson/Documents/GitHub/DataURIManager/test/spec/sass.presenter.spec.js",
+		"/C/Users/paul.wilson/Documents/GitHub/DataURIManager/src/presenters/sass.presenter.js",
+		"/C/Users/paul.wilson/Documents/GitHub/DataURIManager/src/views/view.js",
+		"/C/Users/paul.wilson/Documents/GitHub/DataURIManager/test/matchers.js",
+		"/C/Users/paul.wilson/Documents/GitHub/DataURIManager/src/models/sass.model.js",
+		"/C/Users/paul.wilson/Documents/GitHub/DataURIManager/test/spec/sass.model.spec.js",
+		"/C/Users/paul.wilson/Documents/GitHub/DataURIManager/test/spec/project.model.spec.js",
+		"/C/Users/paul.wilson/Documents/GitHub/DataURIManager/test/spec/sassGenerator.worker.spec.js",
+		"/C/Users/paul.wilson/Documents/GitHub/DataURIManager/src/workers/sassGenerator.worker.js",
+		"/C/Users/paul.wilson/Documents/GitHub/DataURIManager/src/workers/sass.tmpl.css",
+		"/C/Users/paul.wilson/Documents/GitHub/DataURIManager/src/workers/sass.mustache",
+		"/C/Users/paul.wilson/Documents/GitHub/DataURIManager/test/spec/sassGenerator.worker.spec",
+		"/C/Users/paul.wilson/Documents/GitHub/DataURIManager/test/spec/footer.view.spec.js",
+		"/C/Users/paul.wilson/Documents/GitHub/DataURIManager/src/models/model.js",
+		"/C/Users/paul.wilson/Documents/GitHub/DataURIManager/src/views/footer.view.js",
+		"/C/Users/paul.wilson/Documents/GitHub/DataURIManager/src/presenters/footer.presenter.js",
+		"/C/Users/paul.wilson/Documents/GitHub/DataURIManager/test/spec/footer.presenter.spec.js",
+		"/C/Users/paul.wilson/Documents/GitHub/DataURIManager/src/views/upload.view.js",
+		"/C/Users/paul.wilson/Documents/GitHub/DataURIManager/test/spec/project.view.spec.ks",
+		"/C/Users/paul.wilson/Documents/GitHub/DataURIManager/src/presenters/presenter.js",
+		"/C/Users/paul.wilson/Documents/GitHub/DataURIManager/src/lib/events.js",
+		"/C/Users/paul.wilson/Documents/GitHub/DataURIManager/test/spec/adapter.spec.js",
+		"/C/Users/paul.wilson/Documents/GitHub/DataURIManager/src/adapters/localstorage.adapter.js",
+		"/C/Users/paul.wilson/Documents/GitHub/DataURIManager/test/spec/localstorage.adapter.spec.js",
+		"/C/Users/paul.wilson/Documents/GitHub/DataURIManager/src/adapters/adapter.js",
+		"/C/Users/paul.wilson/Documents/GitHub/DataURIManager/src/models/file.model.js",
+		"/C/Users/paul.wilson/Documents/GitHub/DataURIManager/test/spec/model.spec.js",
+		"/C/Users/paul.wilson/Documents/GitHub/DataURIManager/src/views/image.view.js",
+		"/C/Users/paul.wilson/Documents/GitHub/DataURIManager/test/spec/upload.view.spec.js",
+		"/C/Users/paul.wilson/Documents/GitHub/DataURIManager/test/spec/image.view.spec.js",
+		"/C/Users/paul.wilson/Documents/GitHub/DataURIManager/.gitignore~",
+		"/C/Users/paul.wilson/Documents/GitHub/DataURIManager/test/spec/upload.presenter.spec.js",
+		"/C/Users/paul.wilson/Documents/GitHub/DataURIManager/src/presenters/image.presenter.js",
+		"/C/Users/paul.wilson/Documents/GitHub/DataURIManager/src/presenters/upload.presenter.js",
+		"/C/Users/paul.wilson/Documents/GitHub/DataURIManager/test/spec/file.model.spec.js",
+		"/C/Users/paul.wilson/Documents/GitHub/DataURIManager/test/spec/image.presenter.spec.js",
+		"/C/Users/paul.wilson/Documents/GitHub/DataURIManager/test/spec/view.spec.js",
+		"/C/Users/paul.wilson/Documents/GitHub/DataURIManager/src/lib/zepto.js",
+		"/C/Users/paul.wilson/Documents/GitHub/DataURIManager/src/lib/mustache.js",
+		"/C/Users/paul.wilson/Documents/GitHub/DataURIManager/test/spec/image.model.spec.js",
+		"/C/Users/paul.wilson/Documents/GitHub/DataURIManager/test/spec/events.spec.js",
+		"/C/Users/paul.wilson/Documents/GitHub/DataURIManager/src/models/image.presenter.spec.js",
+		"/C/Users/paul.wilson/Documents/GitHub/DataURIManager/test/spec/image.model.js",
+		"/C/Users/paul.wilson/Documents/GitHub/DataURIManager/README.md",
+		"/C/Users/paul.wilson/Documents/GitHub/js-schema/_SpecRunner.html",
+		"/C/Users/paul.wilson/Documents/GitHub/js-schema/test/spec/backbone-adapter.spec.js",
+		"/C/Users/paul.wilson/Documents/GitHub/js-schema/src/adapters/backbone.js",
+		"/C/Users/paul.wilson/Documents/GitHub/js-schema/test/spec/schema.spec.js",
+		"/C/Users/paul.wilson/Documents/GitHub/js-schema/src/adapters/standalone.js",
+		"/C/Users/paul.wilson/Documents/GitHub/js-schema/grunt.js",
+		"/C/Users/paul.wilson/Documents/GitHub/js-schema/test/index.html",
+		"/C/Users/paul.wilson/Documents/GitHub/js-schema/test/mock/backbone.js",
+		"/C/Users/paul.wilson/Documents/GitHub/js-schema/node_modules/grunt-jasmine-runner/package.json",
+		"/C/Users/paul.wilson/Documents/GitHub/js-schema/node_modules/grunt-jasmine-runner/README.md",
+		"/C/Users/paul.wilson/Documents/GitHub/js-schema/examples/Node/script.js",
+		"/C/Users/paul.wilson/Documents/GitHub/js-schema/examples/Node/schema.js",
+		"/C/Users/paul.wilson/Documents/GitHub/js-schema/src/schema.js",
+		"/C/Users/paul.wilson/Documents/GitHub/js-schema/src/castResult.js",
+		"/C/Users/paul.wilson/Documents/GitHub/js-schema/src/types/list.js",
+		"/C/Users/paul.wilson/Documents/GitHub/js-schema/README.md",
+		"/C/Users/paul.wilson/Documents/GitHub/js-schema/examples/AMD/script.js",
+		"/C/Users/paul.wilson/Documents/GitHub/js-schema/examples/AMD/schema.js",
+		"/C/Users/paul.wilson/Documents/GitHub/js-schema/src/type.js",
+		"/C/Users/paul.wilson/Documents/GitHub/js-schema/examples/AMD/index.html",
+		"/C/Users/paul.wilson/Documents/GitHub/js-schema/examples/AMD/main.js",
+		"/C/Users/paul.wilson/Documents/GitHub/js-schema/test/acceptance/standalone.acceptance.js",
+		"/C/Users/paul.wilson/Documents/GitHub/js-schema/examples/data.json",
+		"/C/Users/paul.wilson/Documents/GitHub/js-schema/examples/AMD/zepto.js",
+		"/C/Users/paul.wilson/Documents/GitHub/js-schema/examples/script.js",
+		"/C/Users/paul.wilson/Documents/GitHub/js-schema/test/spec/types.list.spec.js",
+		"/C/Users/paul.wilson/Documents/GitHub/js-schema/examples/AMD/ain.js",
+		"/C/Users/paul.wilson/Documents/GitHub/js-schema/js-schema.sublime-project",
+		"/C/Users/paul.wilson/Documents/GitHub/js-schema/test/spec/types.date.spec.js",
+		"/C/Users/paul.wilson/Documents/GitHub/js-schema/src/types/date.js",
+		"/C/Users/paul.wilson/Documents/GitHub/js-schema/test/spec/type.spec.js",
+		"/C/Users/paul.wilson/Documents/GitHub/js-schema/src/types/string.js",
+		"/C/Users/paul.wilson/Documents/GitHub/js-schema/dist/schema.standalone.js",
+		"/C/Users/paul.wilson/Documents/GitHub/js-schema/test/acceptance/standalone.html",
+		"/C/Users/paul.wilson/Documents/GitHub/js-schema/src/types/array.js",
+		"/C/Users/paul.wilson/Documents/GitHub/js-schema/dist/schema.js",
+		"/C/Users/paul.wilson/Documents/GitHub/js-schema/src/types/boolean.js",
+		"/C/Users/paul.wilson/Documents/GitHub/js-schema/test/acceptance/index.html",
+		"/C/Users/paul.wilson/Documents/GitHub/js-schema/test/acceptance/test-data.json",
+		"/C/Users/paul.wilson/Documents/GitHub/js-schema/test/testacular.conf.js",
+		"/C/Users/paul.wilson/Documents/GitHub/js-schema/dist/schema.standalone.min.js",
+		"/C/Users/paul.wilson/Documents/GitHub/js-schema/test/acceptance.html",
+		"/C/Users/paul.wilson/Documents/GitHub/js-schema/src/adapters/stnadalone.js",
+		"/C/Users/paul.wilson/Documents/GitHub/js-schema/LICENSE.md",
+		"/C/svn/personal/schema/src/types/list.js",
+		"/C/svn/personal/schema/test/spec/types.list.spec.js"
+	],
+	"find":
+	{
+		"height": 34.0
+	},
+	"find_in_files":
+	{
+		"height": 0.0,
+		"where_history":
+		[
+			"C:\\svn\\mini\\connected\\trunk"
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"MockApp",
+			"mockapp",
+			"base",
+			"		\n",
+			"\");\n",
+			"\n	",
+			");\n",
+			"callback1",
+			"root",
+			"window",
+			"root",
+			"window",
+			"result",
+			"code",
+			"];\n",
+			"JSON",
+			"title",
+			"prop",
+			";\n",
+			"console.log",
+			"openSimId = ",
+			"function loadMenuStructure",
+			"loadMenuStructure",
+			"loadmenuByID",
+			"keysprite",
+			"foursqaure",
+			"Google&#8482; Send to Car",
+			"send to",
+			"GOOGLE&#8482; SEND TO CAR",
+			"send to car",
+			"send to ",
+			"fordiff",
+			"cufon",
+			"Cufon.replace",
+			"calendar",
+			"Make a date with mini",
+			"registerFont",
+			"cufon",
+			"waypoints",
+			"car",
+			"initPageNow",
+			"hmiSim",
+			"loadMenuById",
+			"/5",
+			"start_h",
+			"addTitle",
+			"hmiAdd",
+			"handleArrowKeysDown",
+			"handleArrowKeys",
+			"key",
+			"keydown",
+			"calend",
+			"switch",
+			"loadMenuById",
+			"loadMenuBy",
+			"type.loadMenuBy",
+			"loadMenuStructure",
+			"loadMenuById",
+			"openSimId",
+			"switch",
+			"foursquare",
+			"foursquaure",
+			"openSimId",
+			"twitter",
+			"decoration",
+			"the twitter feature lets you display",
+			"function hmiSim",
+			"function HMISim",
+			"HMISim",
+			"simTranslationResource",
+			"../wcms_shared/resources/translation_EN-US.xml",
+			"h",
+			"EN_",
+			"simTranslationResource",
+			"hmiSim",
+			"himSim",
+			"miniconn.fourdegrees.de",
+			"hmi",
+			"00/000705/",
+			"camera",
+			"());"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+			"Send to Car",
+			"/6"
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"selected": 1,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "index.html",
+					"settings":
+					{
+						"buffer_size": 711,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								644,
+								644
+							]
+						],
+						"settings":
+						{
+							"annotations":
+							[
+								"TODO",
+								"README",
+								"FIXME"
+							],
+							"csslint_options":
+							{
+								"adjoining-classes": "warning",
+								"box-model": true,
+								"box-sizing": "warning",
+								"compatible-vendor-prefixes": "warning",
+								"display-property-grouping": true,
+								"duplicate-background-images": "warning",
+								"duplicate-properties": true,
+								"empty-rules": true,
+								"errors": true,
+								"fallback-colors": "warning",
+								"floats": "warning",
+								"font-faces": "warning",
+								"font-sizes": "warning",
+								"gradients": "warning",
+								"ids": "warning",
+								"import": "warning",
+								"important": "warning",
+								"known-properties": true,
+								"outline-none": "warning",
+								"overqualified-elements": "warning",
+								"qualified-headings": "warning",
+								"regex-selectors": "warning",
+								"rules-count": "warning",
+								"shorthand": "warning",
+								"star-property-hack": "warning",
+								"text-indent": "warning",
+								"underscore-property-hack": "warning",
+								"unique-headings": "warning",
+								"universal-selector": "warning",
+								"vendor-prefix": true,
+								"zero-units": "warning"
+							},
+							"gjslint_ignore":
+							[
+								110
+							],
+							"gjslint_options":
+							[
+							],
+							"javascript_linter": "jshint",
+							"jshint_options":
+							{
+								"browser": true,
+								"evil": true,
+								"regexdash": true,
+								"sub": true,
+								"trailing": true,
+								"wsh": true
+							},
+							"pep8": true,
+							"pep8_ignore":
+							[
+								"E501"
+							],
+							"perl_linter": "perlcritic",
+							"pyflakes_ignore":
+							[
+							],
+							"pyflakes_ignore_import_*": true,
+							"sublimelinter": true,
+							"sublimelinter_delay": 2,
+							"sublimelinter_disable":
+							[
+							],
+							"sublimelinter_executable_map":
+							{
+							},
+							"sublimelinter_fill_outlines": false,
+							"sublimelinter_gutter_marks": true,
+							"sublimelinter_gutter_marks_theme": "simple",
+							"sublimelinter_mark_style": "none",
+							"sublimelinter_notes": false,
+							"sublimelinter_objj_check_ascii": false,
+							"sublimelinter_popup_errors_on_save": false,
+							"sublimelinter_syntax_map":
+							{
+								"C++": "c",
+								"Python Django": "python",
+								"Ruby on Rails": "ruby"
+							},
+							"sublimelinter_wrap_find": true,
+							"syntax": "Packages/HTML/HTML.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "happiness.js",
+					"settings":
+					{
+						"buffer_size": 494,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								192,
+								192
+							]
+						],
+						"settings":
+						{
+							"annotations":
+							[
+								"TODO",
+								"README",
+								"FIXME"
+							],
+							"csslint_options":
+							{
+								"adjoining-classes": "warning",
+								"box-model": true,
+								"box-sizing": "warning",
+								"compatible-vendor-prefixes": "warning",
+								"display-property-grouping": true,
+								"duplicate-background-images": "warning",
+								"duplicate-properties": true,
+								"empty-rules": true,
+								"errors": true,
+								"fallback-colors": "warning",
+								"floats": "warning",
+								"font-faces": "warning",
+								"font-sizes": "warning",
+								"gradients": "warning",
+								"ids": "warning",
+								"import": "warning",
+								"important": "warning",
+								"known-properties": true,
+								"outline-none": "warning",
+								"overqualified-elements": "warning",
+								"qualified-headings": "warning",
+								"regex-selectors": "warning",
+								"rules-count": "warning",
+								"shorthand": "warning",
+								"star-property-hack": "warning",
+								"text-indent": "warning",
+								"underscore-property-hack": "warning",
+								"unique-headings": "warning",
+								"universal-selector": "warning",
+								"vendor-prefix": true,
+								"zero-units": "warning"
+							},
+							"gjslint_ignore":
+							[
+								110
+							],
+							"gjslint_options":
+							[
+							],
+							"javascript_linter": "jshint",
+							"jshint_options":
+							{
+								"browser": true,
+								"evil": true,
+								"regexdash": true,
+								"sub": true,
+								"trailing": true,
+								"wsh": true
+							},
+							"pep8": true,
+							"pep8_ignore":
+							[
+								"E501"
+							],
+							"perl_linter": "perlcritic",
+							"pyflakes_ignore":
+							[
+							],
+							"pyflakes_ignore_import_*": true,
+							"sublimelinter": true,
+							"sublimelinter_delay": 2,
+							"sublimelinter_disable":
+							[
+							],
+							"sublimelinter_executable_map":
+							{
+							},
+							"sublimelinter_fill_outlines": false,
+							"sublimelinter_gutter_marks": true,
+							"sublimelinter_gutter_marks_theme": "simple",
+							"sublimelinter_mark_style": "none",
+							"sublimelinter_notes": false,
+							"sublimelinter_objj_check_ascii": false,
+							"sublimelinter_popup_errors_on_save": false,
+							"sublimelinter_syntax_map":
+							{
+								"C++": "c",
+								"Python Django": "python",
+								"Ruby on Rails": "ruby"
+							},
+							"sublimelinter_wrap_find": true,
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "styles.css",
+					"settings":
+					{
+						"buffer_size": 552,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								333,
+								333
+							]
+						],
+						"settings":
+						{
+							"annotations":
+							[
+								"TODO",
+								"README",
+								"FIXME"
+							],
+							"csslint_options":
+							{
+								"adjoining-classes": "warning",
+								"box-model": true,
+								"box-sizing": "warning",
+								"compatible-vendor-prefixes": "warning",
+								"display-property-grouping": true,
+								"duplicate-background-images": "warning",
+								"duplicate-properties": true,
+								"empty-rules": true,
+								"errors": true,
+								"fallback-colors": "warning",
+								"floats": "warning",
+								"font-faces": "warning",
+								"font-sizes": "warning",
+								"gradients": "warning",
+								"ids": "warning",
+								"import": "warning",
+								"important": "warning",
+								"known-properties": true,
+								"outline-none": "warning",
+								"overqualified-elements": "warning",
+								"qualified-headings": "warning",
+								"regex-selectors": "warning",
+								"rules-count": "warning",
+								"shorthand": "warning",
+								"star-property-hack": "warning",
+								"text-indent": "warning",
+								"underscore-property-hack": "warning",
+								"unique-headings": "warning",
+								"universal-selector": "warning",
+								"vendor-prefix": true,
+								"zero-units": "warning"
+							},
+							"gjslint_ignore":
+							[
+								110
+							],
+							"gjslint_options":
+							[
+							],
+							"javascript_linter": "jshint",
+							"jshint_options":
+							{
+								"browser": true,
+								"evil": true,
+								"regexdash": true,
+								"sub": true,
+								"trailing": true,
+								"wsh": true
+							},
+							"pep8": true,
+							"pep8_ignore":
+							[
+								"E501"
+							],
+							"perl_linter": "perlcritic",
+							"pyflakes_ignore":
+							[
+							],
+							"pyflakes_ignore_import_*": true,
+							"sublimelinter": true,
+							"sublimelinter_delay": 2,
+							"sublimelinter_disable":
+							[
+							],
+							"sublimelinter_executable_map":
+							{
+							},
+							"sublimelinter_fill_outlines": false,
+							"sublimelinter_gutter_marks": true,
+							"sublimelinter_gutter_marks_theme": "simple",
+							"sublimelinter_mark_style": "none",
+							"sublimelinter_notes": false,
+							"sublimelinter_objj_check_ascii": false,
+							"sublimelinter_popup_errors_on_save": false,
+							"sublimelinter_syntax_map":
+							{
+								"C++": "c",
+								"Python Django": "python",
+								"Ruby on Rails": "ruby"
+							},
+							"sublimelinter_wrap_find": true,
+							"syntax": "Packages/CSS/CSS.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 285.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 0.0
+	},
+	"input":
+	{
+		"height": 31.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.exec":
+	{
+		"height": 304.0
+	},
+	"output.jslint_result_view":
+	{
+		"height": 100.0
+	},
+	"replace":
+	{
+		"height": 62.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+			[
+				"upload",
+				"src/scripts/presenters/upload.presenter.js"
+			],
+			[
+				"grid",
+				"src/scripts/lib/gridlayout.js"
+			],
+			[
+				"image.view",
+				"src/scripts/views/image.view.js"
+			],
+			[
+				"image.pre",
+				"src/scripts/presenters/image.presenter.js"
+			],
+			[
+				"footer.pre",
+				"src/scripts/presenters/footer.presenter.js"
+			],
+			[
+				"project.model",
+				"src/scripts/models/project.model.js"
+			],
+			[
+				"index",
+				"src/index.html"
+			],
+			[
+				"proj",
+				"src/scripts/models/project.model.js"
+			],
+			[
+				"footer.view",
+				"src/scripts/views/footer.view.js"
+			],
+			[
+				"project.pres",
+				"src/scripts/presenters/project.presenter.js"
+			],
+			[
+				"project.view.s",
+				"test/spec/project.view.spec.js"
+			],
+			[
+				"pro",
+				"src/scripts/views/project.view.js"
+			],
+			[
+				"app",
+				"src/scripts/app.js"
+			]
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 500.0,
+		"selected_items":
+		[
+			[
+				"",
+				"/C/Users/paul.wilson/Documents/GitHub/LondonData/londondata.sublime-project"
+			]
+		],
+		"width": 380.0
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 273.0,
+	"status_bar_visible": true
+}

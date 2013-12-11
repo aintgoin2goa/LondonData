@@ -1,0 +1,110 @@
+body{
+	color:#FFF;
+	font-family: sans-serif;
+	font-size: 16px;
+}
+
+canvas {
+   position: fixed;
+   top: 0;
+   left: 0;
+   visibility: hidden;
+}
+
+#key{
+	position: fixed;
+	top:1em;
+	right:1em;
+	bottom:1em;
+	z-index:100;
+	margin:0;
+	padding:0;
+	overflow: auto;
+	width:270px;
+	z-index: 5;
+}
+
+#key li{
+	margin:0 0 1em 0;
+	padding:0;
+	list-style-type: none;
+	color:#FFF;
+	font-family: sans-serif;
+	font-size: 16px;
+	width: 250px;
+	overflow: hidden;
+	padding-right:24px;
+	box-sizing: border-box;
+}
+
+#key span.color{
+	width:16px;
+	height:16px;
+	margin-left: 8px;
+	float: right;
+} 
+
+#key span.text{
+	float:left;
+	margin-right:8px;
+	width:160px;
+	white-space: nowrap;
+	text-overflow:ellipsis;
+	cursor: pointer;;
+}
+
+#key span.text:hover,
+#key span.text.active
+{
+	background-color:#FFF;
+	color:#000;
+}
+
+#back{
+	color:#FFF;
+	font-family: sans-serif;
+	font-size: 16px;
+	text-decoration: none;
+	position: fixed;
+	left:1em;
+	top:1em;
+	cursor: pointer;
+}
+
+#back:hover{
+	text-decoration: underline;
+}
+
+#info-container{
+	display:none;
+	position: fixed;
+	top:0;
+	left:0;
+	right:0;
+	bottom:0;
+	opacity:0;
+	-webkit-box-orient: horizontal;
+  -webkit-box-pack: center;
+  -webkit-box-align: center;
+}
+
+#info-container table{
+	border:1px solid #000;
+	border-collapse:collapse;
+}
+
+#info-container table td{
+	padding:1em;
+	border:1px solid #000;
+}
+
+#info-container table td.title{
+	background-color: #fff;
+	color:#000;
+	font-weight: bold;
+}
+
+#info-container.visible{
+	opacity:1;
+	display: -webkit-box;
+}
