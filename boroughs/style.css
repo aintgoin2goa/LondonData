@@ -8,7 +8,6 @@ canvas {
    position: fixed;
    top: 0;
    left: 0;
-   visibility: hidden;
 }
 
 #key{
@@ -69,6 +68,7 @@ canvas {
 	left:1em;
 	top:1em;
 	cursor: pointer;
+	z-index:10;
 }
 
 #back:hover{

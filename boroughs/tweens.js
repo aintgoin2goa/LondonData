@@ -9,7 +9,17 @@ var tween = (function(){
 	}
 
 	function updateCamera(){
-		camera.position = {x:this.x, y:this.y, z:this.z};
+		console.log("update", this);
+		camera.position = {
+			x : Math.round(this.x),
+			y : Math.round(this.y), 
+			z : Math.round(this.z)
+		};
+		camera.target = {
+			x : Math.round(this._x), 
+			y : Math.round(this._y), 
+			z : Math.round(this._z)
+		};
 	}
 
 	function loop(){
@@ -25,30 +35,52 @@ var tween = (function(){
 		requestAnimationFrame(loop);
 	}
 
+	function getCoords(position, target, zAdjustment){
+		return {
+			x : position.x,
+			y : position.y,
+			z : position.z + (zAdjustment || 0),
+			_x : target.x,
+			_y : target.y,
+			_z : target.z
+		};
+	}
+
 	function tween(from, to, easing, onUpdate, onComplete){
 		return new TWEEN.Tween(from).to(to)
 			.easing(easing)
 			.onUpdate(onUpdate)
 			.onComplete(function(){
-				tweening = false;
-				onComplete();
+				active = false;
+				console.groupEnd();
+				if(typeof onComplete == "function"){
+					onComplete();
+				}
 			});
 	}
 
 	function tweenCameraToStart(){
-		var from  = camera.position;
-		var to = camera.initial.position;
-		tween(from, to, easingTypes.out, updateCamera, function(){
-			camera.lookAt(to);
-		}).start();
+		var starting = camera.starting;
+		var from  = getCoords(camera.position, camera.target);
+		var to = getCoords(starting.position, starting.target) ;
+		console.groupCollapsed("tweenCameraToStart", from, to);
+		tween(from, to, easingTypes.out, updateCamera).start();
 		start();
 	}
 
 	function tweenCameraToObject(object){
-		var from  = camera.position;
-		var to = object.position;
+		var target = {
+			x : object.position.x, 
+			y : object.position.y, 
+			z : object.position.z
+		};
+
+		var from  = getCoords(camera.position, camera.target);
+		var to =  getCoords(object.position, target, object.geometry.radius * 3);
+
+		console.groupCollapsed("tweenCameraToObject", from, to);
 		tween(from, to, easingTypes.inout, updateCamera, function(){
-			camera.lookAt(to);
+			camera.target = object.position;
 		}).start();
 		start();
 	}
@@ -63,7 +95,14 @@ var tween = (function(){
 	});
 
 	return Object.create(null, {
-		"camera" : cameraTweens
+		"camera" : {
+			value : cameraTweens
+		},
+		"active" : {
+			get : function(){
+				return active;
+			}
+		}
 	});
 
 }());

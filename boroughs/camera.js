@@ -1,10 +1,11 @@
 var camera = (function(){
 
 	var camera = new THREE.PerspectiveCamera(45, scene.width / scene.height, 0.1, 10000);
-
+	camera.position.set(0,0,0);
+	
 	var startingPosition = {
 		x : 0,
-		y : 160,
+		y : 0,
 		z : 6000
 	};
 
@@ -44,7 +45,7 @@ var camera = (function(){
 				camera.position.set(p.x, p.y, p.z)
 			}
 		},
-		"initial" : {
+		"starting" : {
 			get : function(){
 				return {position : _.clone(startingPosition), target : _.clone(startingTarget)};
 			}

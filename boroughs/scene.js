@@ -6,13 +6,16 @@ var scene = (function(){
 	renderer.setSize(width, height);
 	var scene = new THREE.Scene();
 	var skyboxGeometry = new THREE.CubeGeometry(10000, 10000, 10000);
-	var skyboxMaterial = new THREE.MeshBasicMaterial({ color: 0xffffff, side: THREE.BackSide });
+	var skyboxMaterial = new THREE.MeshBasicMaterial({ color: 0x000000, side: THREE.BackSide });
 	var skybox = new THREE.Mesh(skyboxGeometry, skyboxMaterial);
 	scene.add(skybox);
 	var controls, camera, element;
+	var zoomed = false;
 
 	function startDrag(){
-		$(element).on("mousemove", render);
+		if(!zoomed){
+			$(element).on("mousemove", render);
+		}
 	}
 
 	function stopDrag(){
@@ -44,7 +47,7 @@ var scene = (function(){
 
 	function render(){
 		renderer.render(scene, camera);
-		if(!tween.active && controls){
+		if(!tween.active && !zoomed && controls){
 			controls.update();
 		}
 	}
@@ -66,9 +69,7 @@ var scene = (function(){
 			}
 		},
 		"render" : {
-			value : function(){
-				render();
-			}
+			value : render
 		},
 		"renderer" : {
 			get : function(){
@@ -83,6 +84,17 @@ var scene = (function(){
 		"height" : {
 			get : function(){
 				return height;
+			}
+		},
+		"setup" : {
+			value : setup
+		},
+		"zoomed" : {
+			get : function(){
+				return zoomed;
+			},
+			set : function(value){
+				zoomed = value;
 			}
 		}
 	});

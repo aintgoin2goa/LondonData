@@ -14,7 +14,7 @@ var timer = {
 		timer.previous = now;
 	},
 	log: function(){
-		console.group("times");
+		console.groupCollapsed("times");
 		timer.times.forEach(function(time){
 			console.log(time.name, time.time, time.total)
 		});
@@ -32,11 +32,11 @@ var spheres = {};
 var d;
 
 var globalGeometry = new THREE.Geometry();
+var group;
 
 //load data
 data.load("data/data.json", function(){
 	timer.capture("data loaded");
-	//data.sample(0, 25);
 	data.index("name");
 	// setup bindings
 	bind.title.to('name');
@@ -52,28 +52,53 @@ data.load("data/data.json", function(){
 		}
 		var amount = data.plotOnAxis("lifeExpectancyAv", value);
 		var inverted = 1 - amount;
-		return color.calculate(inverted * 255, amount * 255, 0);
+		return color.calculate(Math.round(inverted * 255), Math.round(amount * 255), 0);
 	});
 	timer.capture("bindings created");
 
 	// create spheres
 	var bindings = bind.bindings;
+	var s;
 	while(d = data.next(), d !== false){
-		var s = sphere.create(d, bindings);
-		spheres[d.name] = s;
-		THREE.GeometryUtils.merge(globalGeometry, s);
+		s = sphere.create(d, bindings);
+		spheres[d.name] = Object.create({position : s.position, data : s._data, object : s});
+		scene.add(s);
 	}
 	timer.capture("spheres created");
-	console.log("created spheres", spheres);
-	timer.log();
-	alert("Done");
-	// merge geometry?
 
 	//setup scene
+	scene.setup(document.body, camera, light);
+	
+	
+	timer.capture("scene created");
+	scene.render();
+	timer.capture("scene rendered");
+	timer.log();
 
-	//render
+	key.write(spheres);
+	setTimeout(function(){
+		tween.camera.toStart();
+	}, 5);
+});
 
-	//write key
+evnt.subscribe("highlight", function(event, title){
+	var sph = spheres[title];
+	sphere.addGlow(sph.object);
+});
 
+evnt.subscribe("unhighlight", function(event, title){
+	sphere.removeGlow();
+});
+
+evnt.subscribe("goto", function(event, title){
+	scene.zoomed = true;
+	var sph = spheres[title];
+	tween.camera.toObject(sph.object);
+});
+
+$('#back').on("click", function(){
+	scene.zoomed = false;
+	key.clearHighlight();
+	tween.camera.toStart();
 });
 

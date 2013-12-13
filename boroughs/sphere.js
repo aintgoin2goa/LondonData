@@ -10,7 +10,6 @@
   	}
 
 
-
   	function create(data, bindings){
   		var _getBoundData = function(binding){
   			return getBoundData(data, binding);
@@ -21,7 +20,8 @@
   		var radius = _getBoundData(bindings.radius);
   		var color = _getBoundData(bindings.color);
       var title = _getBoundData(bindings.title);
-  		var segments = radius/4 > 12 ? radius/2 : 12;
+  		var segments = Math.round(radius/4);
+      segments = segments < 12 ? 12 : segments;
   		var sphereGeometry = new THREE.SphereGeometry(radius, segments, segments);
   		var sphereMaterial = new THREE.MeshLambertMaterial({ color: color.three,  opacity: 0.9, transparent: true });
   		var sphere = new THREE.Mesh(sphereGeometry, sphereMaterial);
@@ -32,6 +32,9 @@
   	}
 
   	function addGlow(sphere){
+      if(scene.zoomed){
+        return;
+      }
   		glowMesh = new THREE.Mesh(sphere.geometry.clone(), shaders.glow.clone());
   		glowMesh.position = sphere.position;
   		glowMesh.scale.multiplyScalar(1.5);
@@ -52,7 +55,7 @@
         "addGlow" : {
           value : addGlow
         },
-        "remove" : {
+        "removeGlow" : {
           value : removeGlow
         }
   	});

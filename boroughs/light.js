@@ -1,6 +1,6 @@
 var light = (function(){
 
-	var light = new THREE.SpotLight(0xffffff, 1.2);
+	var light = new THREE.HemisphereLight(0xffffff, 1.5);
 	light.position.set(0,0, 6000);
 
 	return Object.create(null, {

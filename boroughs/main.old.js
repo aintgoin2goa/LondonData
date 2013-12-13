@@ -70,7 +70,7 @@ function calculateColor(lifeExp){
 }
 
 function addBorough(name, data){
-	var color  = calculateColor(data.lifeExpectancy.average);
+	var color  = calculateColor(data.lifeExpectancyAv);
 	var radius = Math.round(data.population);
 	var segments = radius/2 > 24 ? radius/2 : 24;
 	var sphereGeometry = new THREE.SphereGeometry(radius, segments, segments);
@@ -81,7 +81,7 @@ function addBorough(name, data){
 		_.random(limits.y[0], limits.y[1]), 
 		_.random(limits.z[0], limits.z[1])
 	);
-	boroughs[name] = {name: name, data:data, color:color, object:sphere};
+	boroughs[data.name] = {name: data.name, data:data, color:color, object:sphere};
 	scene.add(sphere);
 }
 
@@ -135,7 +135,7 @@ var glowMaterial = function(){
 }
 
 
-var tween = getTweens(camera);
+//var tween = getTweens(camera);
 
 function cameraIsAtStartingPosition(){
 	var current = camera.position;
@@ -172,13 +172,13 @@ $.getJSON("data/data.json", function(data){
 	});
 	*/
 	console.log("data", data);
-	var lifeExpectancies = _.pluck(data, "lifeExpectancy");
+	var lifeExpectancies = _.pluck(data, "lifeExpectancyAv");
 
 	lowestLifeExp = _.reduce(lifeExpectancies, function(m, d){
-		return d.average && d.average < m ? d.average : m;
+		return d && d < m ? d : m;
 	}, lowestLifeExp);
 	highestLifeExp = _.reduce(lifeExpectancies, function(m, d){
-		return d.average && d.average > m ? d.average : m;
+		return d && d > m ? d : m;
 	}, highestLifeExp);
 	lifeExpancyAxis = (highestLifeExp - lowestLifeExp);
 	timer.capture("begin adding boroughs");
@@ -198,7 +198,7 @@ $.getJSON("data/data.json", function(data){
 		console.groupEnd();
 	}, 5);
 	camera.lookAt({x:0,y:0,z:0});
-	tween.camera.toStart();
+	//tween.camera.toStart();
 	$('#key').on('mouseover', 'span.text', function(){
 		if(zoomed){
 			return;
@@ -218,7 +218,7 @@ $.getJSON("data/data.json", function(data){
 		$(this).addClass("active");
 		var name = $(this).text();
 		var borough = boroughs[name];
-		tween.camera.toObject(borough.object);
+		//tween.camera.toObject(borough.object);
 		$('#info-container .name').text(name);
 		$('#info-container .population').text(Math.round(borough.data.population * 1000));
 		$('#info-container .lifeExpec-m').text(Math.round(borough.data.lifeExpectancy.m) || "?");
@@ -232,7 +232,7 @@ $.getJSON("data/data.json", function(data){
 	});
 	$(document.body).on('click', '#back', function(){
 		$('#key span.text.active').removeClass("active");
-		tween.camera.toStart();
+		//tween.camera.toStart();
 		$('#info-container').removeClass('visible');
 		zoomed = false;
 	});
@@ -242,6 +242,8 @@ $.getJSON("data/data.json", function(data){
 });
 
 var controls = new THREE.OrbitControls(camera, renderer.domElement);
+
+camera.position.set(0, 0, 6000);
 
 function render(tweening) {
 	renderer.render(scene, camera);

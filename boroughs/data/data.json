@@ -229,40 +229,5 @@
     "lifeExpectancyM": 81.5,
     "lifeExpectancyF": 84.576919555664,
     "lifeExpectancyAv": 83.038459777832
-  },
-  {
-    "name": "Total",
-    "population": null,
-    "lifeExpectancyM": null,
-    "lifeExpectancyF": null,
-    "lifeExpectancyAv": null
-  },
-  {
-    "name": "Central London1",
-    "population": 462.163497990159,
-    "lifeExpectancyM": null,
-    "lifeExpectancyF": null,
-    "lifeExpectancyAv": null
-  },
-  {
-    "name": "Rest of Inner London",
-    "population": 1794.57628467936,
-    "lifeExpectancyM": null,
-    "lifeExpectancyF": null,
-    "lifeExpectancyAv": null
-  },
-  {
-    "name": "Inner London",
-    "population": 2256.73978266952,
-    "lifeExpectancyM": null,
-    "lifeExpectancyF": null,
-    "lifeExpectancyAv": null
-  },
-  {
-    "name": "Outer London",
-    "population": 3291.96817329722,
-    "lifeExpectancyM": null,
-    "lifeExpectancyF": null,
-    "lifeExpectancyAv": null
   }
 ]
