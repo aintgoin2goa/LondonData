@@ -10,7 +10,11 @@ var axisLinks = (function(){
         linewidth : 5
     });
 
-    var XaxisLink, YaxisLine, ZaxisLine;
+    var axisLines = {
+    	x :null,
+    	y : null,
+    	z : null
+    }
 
 	var viewPoints ={
 		x : {
@@ -31,69 +35,74 @@ var axisLinks = (function(){
 		  var geometry = new THREE.Geometry();
 		  geometry.vertices.push(new THREE.Vector3(-4000, 0, 0));
 		  geometry.vertices.push(new THREE.Vector3(4000, 0, 0));
-		  XaxisLine = new THREE.Line(geometry, lineMaterial);
-		  scene.add(XaxisLine);
+		  axisLines.x = new THREE.Line(geometry, lineMaterial);
+		  scene.add(axisLines.x);
+		  scene.render();
 	}
 
 	function showYAxis(){
 		  var geometry = new THREE.Geometry();
 		  geometry.vertices.push(new THREE.Vector3(0, -4000, 0));
 		  geometry.vertices.push(new THREE.Vector3(0, 4000, 0));
-		  YaxisLine = new THREE.Line(geometry, lineMaterial);
-		  scene.add(YaxisLine);
+		  axisLines.y = new THREE.Line(geometry, lineMaterial);
+		  scene.add(axisLines.y);
+		  scene.render();
 	}
 
 	function showZAxis(){
 		  var geometry = new THREE.Geometry();
 		  geometry.vertices.push(new THREE.Vector3(0, 0, -6000));
 		  geometry.vertices.push(new THREE.Vector3(0, 0, 6000));
-		  ZaxisLine = new THREE.Line(geometry, lineMaterial);
-		  scene.add(ZaxisLine);
+		  axisLines.z = new THREE.Line(geometry, lineMaterial);
+		  scene.add(axisLines.z);
+		  scene.render();
 	}
 
-	function hideAxisLines(){
-		if(XaxisLine !== null){
-			scene.remove(XaxisLine);
-			XaxisLine = null;
+	function hideAxisLine(axis){
+		if(axisLines[axis] !== null){
+			scene.remove(axisLines[axis]);
+			axisLines[axis] = null;
 		}
-		if(YaxisLine !== null){
-			scene.remove(YaxisLine);
-			YaxisLine = null;
-		}
-		if(ZaxisLine !== null){
-			scene.remove(ZaxisLine);
-			ZaxisLine = null;
-		}
+		scene.render();
 	}
 
 
 	function setLinks(){
 		var bindings = bind.bindings;
-		$x.children('span').text(data.getHumanName(bindings.x.property));
-		$y.children('span').text(data.getHumanName(bindings.y.property));
-		$z.children('span').text(data.getHumanName(bindings.z.property));
+		$x.text(data.getHumanName(bindings.x.property));
+		$y.text(data.getHumanName(bindings.y.property));
+		$z.text(data.getHumanName(bindings.z.property));
 		addEvents();
 	}
 
 	function addEvents(){
 		$container.on('click', 'a.data', function(){
+			info.clearFilter();
 			info.show();
 		});
 		$container.on('mouseover', function(e){
 			switch(e.target.className){
 				case "x" : 
-					//showXAxis();
+					showXAxis();
+					break;
+				case "y" : 
+					showYAxis();
+					break;
+				case "z" : 
+					showZAxis();
 					break;
 			}
 		});
 		$container.on('mouseout', 'a', function(){
-			//hideAxisLines();
+			if($(this).hasClass("active") || $(this).hasClass("data")){
+				return;
+			}else{
+				hideAxisLine($(this).data('axis'));
+			}
+
 		})
 	}
 
-	showXAxis();
-	showYAxis();
-	showZAxis();
 
 	return Object.create(null, {
 		"init" : {
