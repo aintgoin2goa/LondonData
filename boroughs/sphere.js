@@ -35,16 +35,13 @@
       if(scene.zoomed){
         return;
       }
-  		glowMesh = new THREE.Mesh(sphere.geometry.clone(), shaders.glow.clone());
-  		glowMesh.position = sphere.position;
-  		glowMesh.scale.multiplyScalar(1.5);
-  		scene.add(glowMesh);
+      sphere.material._color = sphere.material.color.getHex();
+  		sphere.material.color.setHex(0xffffff);
   		scene.render();
   	}
 
-  	function removeGlow(){
-  		scene.remove(glowMesh);
-  		glowMesh = null;
+  	function removeGlow(sphere){
+  		sphere.material.color.setHex(sphere.material._color);
   		scene.render();
   	}
 

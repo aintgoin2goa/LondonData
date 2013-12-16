@@ -10,7 +10,6 @@ var timer = {
 		var now = Date.now();
 		var captured = {name: name, time : now - timer.previous, total : now - timer.startTime};
 		timer.times.push(captured);
-		//console.log(JSON.stringify(captured));
 		timer.previous = now;
 	},
 	log: function(){
@@ -118,7 +117,8 @@ evnt.subscribe("highlight", function(event, title){
 });
 
 evnt.subscribe("unhighlight", function(event, title){
-	sphere.removeGlow();
+	var sph = spheres[title];
+	sphere.removeGlow(sph.object);
 });
 
 evnt.subscribe("goto", function(event, title){

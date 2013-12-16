@@ -65,8 +65,8 @@ canvas {
 	font-size: 16px;
 	text-decoration: none;
 	position: fixed;
-	left:1em;
-	top:1em;
+	left:2px;
+	top:2px;
 	cursor: pointer;
 	z-index:10;
 }
@@ -77,16 +77,22 @@ canvas {
 
 #info{
 	display:-webkit-box;
+	display: -mox-box;
 	position: fixed;
 	top:0;
 	left:-5000px;
 	right:auto;
 	bottom:0;
 	opacity:0;
+	max-height: 100%;
+	overflow: auto;
 	-webkit-box-orient: horizontal;
 	-webkit-box-pack: center;
 	-webkit-box-align: center;
-	z-index:4;
+	-mox-box-orient : horizontal;
+	-moz-box-pack : horizontal;
+	-moz-box-align : horizontal;
+	z-index:6;
 	-webkit-transition: opacity 0.5s linear;
 }
 
@@ -128,7 +134,9 @@ canvas {
 	left:0;
 	right: 300px;
 	display:-webkit-box;
+	display: -moz-box;
 	-webkit-box-orient: horizontal;
+	-moz-box-orient : horizontal;
 	z-index: 4;
 }
 
@@ -142,6 +150,7 @@ canvas {
 	display:block;
 	padding:2px;
 	-webkit-box-flex:1;
+	-moz-box-flex:1;
 	text-align: center;
 	box-sizing:border-box;
 	border:1px solid #000;
@@ -154,4 +163,21 @@ canvas {
 	border-color: #FFF;
 }
 
+#axis-links a[data-axis="x"]:hover,
+#axis-links a[data-axis="x"].active
+{
+	color:#ff0000;
+}
+
+#axis-links a[data-axis="y"]:hover,
+#axis-links a[data-axis="y"].active
+{
+	color:#00ff00;
+}
+
+#axis-links a[data-axis="z"]:hover,
+#axis-links a[data-axis="z"].active
+{
+	color:#0000ff;
+}
 
