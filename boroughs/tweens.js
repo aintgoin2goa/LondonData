@@ -9,7 +9,6 @@ var tween = (function(){
 	}
 
 	function updateCamera(){
-		console.log("update", this);
 		camera.position = {
 			x : Math.round(this.x),
 			y : Math.round(this.y), 
@@ -63,7 +62,6 @@ var tween = (function(){
 		var starting = camera.starting;
 		var from  = getCoords(camera.position, camera.target);
 		var to = getCoords(starting.position, starting.target) ;
-		console.groupCollapsed("tweenCameraToStart", from, to);
 		tween(from, to, easingTypes.out, updateCamera).start();
 		start();
 	}
@@ -78,7 +76,6 @@ var tween = (function(){
 		var from  = getCoords(camera.position, camera.target);
 		var to =  getCoords(object.position, target, object.geometry.radius * 3);
 
-		console.groupCollapsed("tweenCameraToObject", from, to);
 		tween(from, to, easingTypes.inout, updateCamera, function(){
 			camera.target = object.position;
 		}).start();

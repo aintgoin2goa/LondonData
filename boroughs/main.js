@@ -106,6 +106,7 @@ data.load("data/data.json", function(){
 	key.write(spheres);
 	// create info table
 	info.init(data.raw, "name");
+	axisLinks.init();
 	setTimeout(function(){
 		tween.camera.toStart();
 	}, 5);

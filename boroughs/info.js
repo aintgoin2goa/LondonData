@@ -4,18 +4,9 @@ var info = (function(){
 	var $table = $el.children('table');
 	var $tbody, $thead;
 
-	function transformKey(key){
-		key = key.replace(/[A-Z]/g, function(match){
-			return " " + match;
- 		});
-		key = key.replace(/^[a-z]/, function(match){
-			return match.toUpperCase();
-		});
-		return key;
-	}
 
-	function buildHead(data){
-		var columns = Object.keys(data[0]).map(transformKey);
+	function buildHead(d){
+		var columns = Object.keys(d[0]).map(data.getHumanName);
 		$thead = $('<thead />');
 		var $tr = $('<tr />');
 		columns.forEach(function(col){

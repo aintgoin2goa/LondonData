@@ -6,7 +6,7 @@ var camera = (function(){
 	var startingPosition = {
 		x : 0,
 		y : 0,
-		z : 6000
+		z : 8000
 	};
 
 	var startingTarget = {
@@ -20,6 +20,20 @@ var camera = (function(){
 	function lookAt(target){
 		currentTarget = target;
 		camera.lookAt(target);
+	}
+
+	function rotate(x, y, z){
+		camera.rotation.x = x;
+		camera.rotation.y = y;
+		camera.rotation.z = z;
+	}
+
+	function toRadians(obj){
+		return {
+			x : obj.x * Math.PI / 180,
+			y : obj.y * Math.PI / 180,
+			z : obj.z * Math.PI / 180
+		}
 	}
 
 	return Object.create(null, {
@@ -48,6 +62,14 @@ var camera = (function(){
 		"starting" : {
 			get : function(){
 				return {position : _.clone(startingPosition), target : _.clone(startingTarget)};
+			}
+		},
+		"rotation" : {
+			set : function(val){
+				rotate(toRadians(val));
+			},
+			get : function(){
+				return camera.rotation;
 			}
 		}
 	});

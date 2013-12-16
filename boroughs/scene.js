@@ -24,9 +24,11 @@ var scene = (function(){
 
 	function setup(el, cam, light, options){
 		element = el;
-		camera = cam.object;
-		scene.add(camera);
-		scene.add(light.object);
+		camera = cam;
+		scene.add(camera.object);
+		light.objects.forEach(function(l){
+			scene.add(l);
+		})
 		options = options || {};
 		options = _.defaults(options, {
 			autopan : true,
@@ -34,19 +36,19 @@ var scene = (function(){
 		});
 		element.appendChild(renderer.domElement);
 		if(options.autopan){
-			controls = new THREE.OrbitControls(camera, renderer.domElement);
+			controls = new THREE.OrbitControls(camera.object, renderer.domElement);
 			$(element).on("mousedown", startDrag);
 			$(element).on("mouseup", stopDrag);
 		}
 		
 		if(options.autoresize){
-			THREEx.WindowResize(renderer, camera);
+			THREEx.WindowResize(renderer, camera.object);
 		}
 	
 	}
 
 	function render(){
-		renderer.render(scene, camera);
+		renderer.render(scene, camera.object);
 		if(!tween.active && !zoomed && controls){
 			controls.update();
 		}

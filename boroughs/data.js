@@ -67,6 +67,16 @@ var data = (function(){
 		data = data.slice(from, number);
 	}
 
+	function getHumanName(property){
+		property = property.replace(/[A-Z]/g, function(match){
+			return " " + match;
+ 		});
+		property = property.replace(/^[a-z]/, function(match){
+			return match.toUpperCase();
+		});
+		return property;
+	}
+
 	return Object.create(null, {
 		"load" : {
 			value : load
@@ -113,6 +123,9 @@ var data = (function(){
 		},
 		"sample" : {
 			value : sample
+		},
+		"getHumanName" : {
+			value : getHumanName
 		}
 	});
 
