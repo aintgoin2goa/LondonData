@@ -75,36 +75,51 @@ canvas {
 	text-decoration: underline;
 }
 
-#info-container{
-	display:none;
+#info{
+	display:-webkit-box;
 	position: fixed;
 	top:0;
-	left:0;
-	right:0;
+	left:-5000px;
+	right:auto;
 	bottom:0;
 	opacity:0;
 	-webkit-box-orient: horizontal;
-  -webkit-box-pack: center;
-  -webkit-box-align: center;
+	-webkit-box-pack: center;
+	-webkit-box-align: center;
+	z-index:4;
+	-webkit-transition: opacity 0.5s linear;
 }
 
-#info-container table{
+#info.visible{
+	left:0;
+	right:0;
+	opacity:1;
+}
+
+#info table{
 	border:1px solid #000;
 	border-collapse:collapse;
 }
 
-#info-container table td{
-	padding:1em;
-	border:1px solid #000;
+#info table th{
+	background-color: #000;
+	color:#fff;
+	font-weight: bold;
+	padding: 2px 1em;
+	border:1px solid #fff;
 }
 
-#info-container table td.title{
+#info table td{
 	background-color: #fff;
 	color:#000;
-	font-weight: bold;
+	padding: 5px 1em;
+	border:1px solid #000;
+	text-align: center;
 }
 
-#info-container.visible{
-	opacity:1;
-	display: -webkit-box;
+#info table td.name{
+	font-weight: bold;
+	text-align: left;
 }
+
+

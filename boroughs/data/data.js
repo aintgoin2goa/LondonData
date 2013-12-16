@@ -1,7 +1,7 @@
 var GoogleSpreadsheet = require("google-spreadsheet");
 var fs = require("fs");
 
-var spreadsheet = new GoogleSpreadsheet("0AonYZs4MzlZbdDNibnM4NXByQWJpQ2hMbUZobGNCMVE");
+var spreadsheet = new GoogleSpreadsheet("0AkQfZTveg_fkdFFfWlFFUUhMcnRNT3lRMkNlZ0V2eHc");
 
 spreadsheet.getRows(1, function(err, data){
 	if(err){
@@ -12,17 +12,20 @@ spreadsheet.getRows(1, function(err, data){
 	var jsonData = [];
 
 	data.forEach(function(row){
-		var population = parseFloat(row.population000s, 10);
-		var lifeExpectancyM = parseFloat(row.lifeexpectancyatbirthyearsmales, 10);
-		var lifeExpectancyF = parseFloat(row.lifeexpectancyatbirthyearsfemales, 10);
+		var lifeExpectancyM = parseFloat(row.lifeexpectancym, 10);
+		var lifeExpectancyF = parseFloat(row.lifeexpectancyf, 10);
 		var lifeExpectancyAv = (lifeExpectancyM + lifeExpectancyF) / 2;
-		jsonData.push({
-			name : row.title,
-			population : population,
-			lifeExpectancyM : lifeExpectancyM, 
+		var data = {
+			name : row.borough,
+			population : parseFloat(row.population, 10),
+			lifeExpectancyM : lifeExpectancyM,
 			lifeExpectancyF : lifeExpectancyF,
-			lifeExpectancyAv : lifeExpectancyAv
-		});
+			lifeExpectancyAv : lifeExpectancyAv,
+			happiness : parseFloat(row.happiness, 10),
+			employment : parseFloat(row.employment, 10),
+			circulatoryDisease : parseFloat(row.circulatorydisease, 10)
+		}
+		jsonData.push(data);
 	});
 
 	fs.writeFileSync("data.json", JSON.stringify(jsonData, null, 2), {encoding:"utf8"});

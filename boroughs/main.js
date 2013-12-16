@@ -24,8 +24,19 @@ var timer = {
 
 timer.start();
 
-var random = function(){
-	return _.random(-2000, 2000)
+
+function plotCoord(column, value){
+	if(value === null){
+		return 0;
+	}
+	var amount = data.plotOnAxis(column, value) - 0.5;
+		return (amount * 2000) * 2;
+}
+
+function bindCoord(coord, column){
+	bind[coord].to(column).using(function(value){
+		return plotCoord(column, value);
+	})
 }
 
 var spheres = {};
@@ -40,7 +51,23 @@ data.load("data/data.json", function(){
 	data.index("name");
 	// setup bindings
 	bind.title.to('name');
-	bind.x.to.dummy(random);
+	bind.radius.to('population').using(function(value){
+		return Math.round(value);
+	});
+	bind.color.to('happiness').using(function(value){
+		if(value == null){
+			return color.calculate(120, 120, 120);
+		}
+		var amount = data.plotOnAxis("happiness", value);
+		var inverted = 1 - amount;
+		return color.calculate(Math.round(inverted * 255), Math.round(amount * 255), 0);
+	});
+	bindCoord('x', 'employment');
+	bindCoord('y', 'lifeExpectancyAv');
+	bindCoord('z', 'circulatoryDisease');
+
+	/*
+	bind.x.to('')
 	bind.y.to.dummy(random);
 	bind.z.to.dummy(random);
 	bind.radius.to('population').using(function(pop){
@@ -54,6 +81,7 @@ data.load("data/data.json", function(){
 		var inverted = 1 - amount;
 		return color.calculate(Math.round(inverted * 255), Math.round(amount * 255), 0);
 	});
+*/
 	timer.capture("bindings created");
 
 	// create spheres
@@ -74,8 +102,10 @@ data.load("data/data.json", function(){
 	scene.render();
 	timer.capture("scene rendered");
 	timer.log();
-
+	// write key
 	key.write(spheres);
+	// create info table
+	info.init(data.raw, "name");
 	setTimeout(function(){
 		tween.camera.toStart();
 	}, 5);
@@ -94,11 +124,17 @@ evnt.subscribe("goto", function(event, title){
 	scene.zoomed = true;
 	var sph = spheres[title];
 	tween.camera.toObject(sph.object);
+	info.filter(title);
+	info.show();
 });
 
 $('#back').on("click", function(){
 	scene.zoomed = false;
 	key.clearHighlight();
 	tween.camera.toStart();
+	info.hide();
+	setTimeout(function(){
+		info.clearFilter();
+	}, 1000);
 });
 

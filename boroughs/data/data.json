@@ -1,233 +1,332 @@
 [
   {
     "name": "City of London",
-    "population": 7.33239861152603,
+    "population": 7.3,
     "lifeExpectancyM": null,
     "lifeExpectancyF": null,
-    "lifeExpectancyAv": null
+    "lifeExpectancyAv": null,
+    "happiness": null,
+    "employment": null,
+    "circulatoryDisease": null
   },
   {
     "name": "Barking & Dagenham",
-    "population": 116.681311010494,
-    "lifeExpectancyM": 76.32,
-    "lifeExpectancyF": 80.324440002441,
-    "lifeExpectancyAv": 78.3222200012205
+    "population": 116.7,
+    "lifeExpectancyM": 76.3,
+    "lifeExpectancyF": 80.3,
+    "lifeExpectancyAv": 78.3,
+    "happiness": null,
+    "employment": null,
+    "circulatoryDisease": 108
   },
   {
     "name": "Barnet",
-    "population": 233.618861479346,
-    "lifeExpectancyM": 79.462928771973,
-    "lifeExpectancyF": 83.571296691895,
-    "lifeExpectancyAv": 81.51711273193399
+    "population": 233.6,
+    "lifeExpectancyM": 79.5,
+    "lifeExpectancyF": 83.6,
+    "lifeExpectancyAv": 81.55,
+    "happiness": 7.92,
+    "employment": 69.8,
+    "circulatoryDisease": 61
   },
   {
     "name": "Bexley",
-    "population": 156.556433636948,
-    "lifeExpectancyM": 78.745590209961,
-    "lifeExpectancyF": 82.745361328125,
-    "lifeExpectancyAv": 80.745475769043
+    "population": 156.6,
+    "lifeExpectancyM": 78.7,
+    "lifeExpectancyF": 82.7,
+    "lifeExpectancyAv": 80.7,
+    "happiness": 7.76,
+    "employment": 71.4,
+    "circulatoryDisease": 69
   },
   {
     "name": "Brent",
-    "population": 201.826853095476,
-    "lifeExpectancyM": 78.518951416016,
-    "lifeExpectancyF": 83.779518127441,
-    "lifeExpectancyAv": 81.14923477172849
+    "population": 201.8,
+    "lifeExpectancyM": 78.5,
+    "lifeExpectancyF": 83.8,
+    "lifeExpectancyAv": 81.15,
+    "happiness": 7.59,
+    "employment": 61.2,
+    "circulatoryDisease": 89
   },
   {
     "name": "Bromley",
-    "population": 215.896235128919,
-    "lifeExpectancyM": 79.48307800293,
-    "lifeExpectancyF": 83.48055267334,
-    "lifeExpectancyAv": 81.481815338135
+    "population": 215.9,
+    "lifeExpectancyM": 79.5,
+    "lifeExpectancyF": 83.5,
+    "lifeExpectancyAv": 81.5,
+    "happiness": 7.78,
+    "employment": 74,
+    "circulatoryDisease": 56
   },
   {
     "name": "Camden",
-    "population": 157.134665913235,
-    "lifeExpectancyM": 76.922889709473,
-    "lifeExpectancyF": 82.224174499512,
-    "lifeExpectancyAv": 79.5735321044925
+    "population": 157.1,
+    "lifeExpectancyM": 76.9,
+    "lifeExpectancyF": 82.2,
+    "lifeExpectancyAv": 79.55000000000001,
+    "happiness": 7.7,
+    "employment": 61.9,
+    "circulatoryDisease": 94
   },
   {
     "name": "Croydon",
-    "population": 240.670466516582,
-    "lifeExpectancyM": 78.309288024902,
-    "lifeExpectancyF": 81.974601745605,
-    "lifeExpectancyAv": 80.14194488525351
+    "population": 240.7,
+    "lifeExpectancyM": 78.3,
+    "lifeExpectancyF": 82,
+    "lifeExpectancyAv": 80.15,
+    "happiness": 7.79,
+    "employment": 66.4,
+    "circulatoryDisease": 80
   },
   {
     "name": "Ealing",
-    "population": 228.886454542995,
-    "lifeExpectancyM": 78.156295776367,
-    "lifeExpectancyF": 82.959518432617,
-    "lifeExpectancyAv": 80.557907104492
+    "population": 228.9,
+    "lifeExpectancyM": 78.2,
+    "lifeExpectancyF": 83,
+    "lifeExpectancyAv": 80.6,
+    "happiness": 7.38,
+    "employment": 68.8,
+    "circulatoryDisease": 89
   },
   {
     "name": "Enfield",
-    "population": 206.90692165947,
-    "lifeExpectancyM": 78.541137695313,
-    "lifeExpectancyF": 82.408332824707,
-    "lifeExpectancyAv": 80.47473526001
+    "population": 206.9,
+    "lifeExpectancyM": 78.5,
+    "lifeExpectancyF": 82.4,
+    "lifeExpectancyAv": 80.45,
+    "happiness": 7.68,
+    "employment": 65.5,
+    "circulatoryDisease": 75
   },
   {
     "name": "Greenwich",
-    "population": 165.439425177342,
-    "lifeExpectancyM": 74.903327941895,
-    "lifeExpectancyF": 81.375801086426,
-    "lifeExpectancyAv": 78.1395645141605
+    "population": 165.4,
+    "lifeExpectancyM": 74.9,
+    "lifeExpectancyF": 81.4,
+    "lifeExpectancyAv": 78.15,
+    "happiness": 7.51,
+    "employment": 67.8,
+    "circulatoryDisease": 99
   },
   {
     "name": "Hackney",
-    "population": 157.628357644424,
-    "lifeExpectancyM": 75.650367736816,
-    "lifeExpectancyF": 82.102203369141,
-    "lifeExpectancyAv": 78.87628555297849
+    "population": 157.6,
+    "lifeExpectancyM": 75.7,
+    "lifeExpectancyF": 82.1,
+    "lifeExpectancyAv": 78.9,
+    "happiness": 7.87,
+    "employment": 67.4,
+    "circulatoryDisease": 113
   },
   {
     "name": "Hammersmith & Fulham",
-    "population": 136.896000915569,
-    "lifeExpectancyM": 77.958801269531,
-    "lifeExpectancyF": 84.010520935059,
-    "lifeExpectancyAv": 80.98466110229501
+    "population": 136.9,
+    "lifeExpectancyM": 78,
+    "lifeExpectancyF": 84,
+    "lifeExpectancyAv": 81,
+    "happiness": 7.51,
+    "employment": 67.6,
+    "circulatoryDisease": 92
   },
   {
     "name": "Haringey",
-    "population": 172.693441238406,
-    "lifeExpectancyM": 76.124755859375,
-    "lifeExpectancyF": 82.811317443848,
-    "lifeExpectancyAv": 79.4680366516115
+    "population": 172.7,
+    "lifeExpectancyM": 76.1,
+    "lifeExpectancyF": 82.8,
+    "lifeExpectancyAv": 79.44999999999999,
+    "happiness": 7.31,
+    "employment": 66.2,
+    "circulatoryDisease": 94
   },
   {
     "name": "Harrow",
-    "population": 158.406203888418,
-    "lifeExpectancyM": 79.612602233887,
-    "lifeExpectancyF": 83.596557617188,
-    "lifeExpectancyAv": 81.60457992553751
+    "population": 158.4,
+    "lifeExpectancyM": 79.6,
+    "lifeExpectancyF": 83.6,
+    "lifeExpectancyAv": 81.6,
+    "happiness": 7.8,
+    "employment": 74.1,
+    "circulatoryDisease": 64
   },
   {
     "name": "Havering",
-    "population": 165.002221570376,
-    "lifeExpectancyM": 78.273307800293,
-    "lifeExpectancyF": 82.073913574219,
-    "lifeExpectancyAv": 80.173610687256
+    "population": 165,
+    "lifeExpectancyM": 78.3,
+    "lifeExpectancyF": 82.1,
+    "lifeExpectancyAv": 80.19999999999999,
+    "happiness": 7.57,
+    "employment": 74.2,
+    "circulatoryDisease": 72
   },
   {
     "name": "Hillingdon",
-    "population": 178.779526188218,
-    "lifeExpectancyM": 77.95866394043,
-    "lifeExpectancyF": 82.709518432617,
-    "lifeExpectancyAv": 80.3340911865235
+    "population": 178.8,
+    "lifeExpectancyM": 78,
+    "lifeExpectancyF": 82.7,
+    "lifeExpectancyAv": 80.35,
+    "happiness": 7.58,
+    "employment": 70.2,
+    "circulatoryDisease": 80
   },
   {
     "name": "Hounslow",
-    "population": 162.858837978236,
-    "lifeExpectancyM": 76.936897277832,
-    "lifeExpectancyF": 81.194900512695,
-    "lifeExpectancyAv": 79.0658988952635
+    "population": 162.9,
+    "lifeExpectancyM": 76.9,
+    "lifeExpectancyF": 81.2,
+    "lifeExpectancyAv": 79.05000000000001,
+    "happiness": 7.89,
+    "employment": 73.2,
+    "circulatoryDisease": 94
   },
   {
     "name": "Islington",
-    "population": 146.317306270296,
-    "lifeExpectancyM": 75.124656677246,
-    "lifeExpectancyF": 80.806121826172,
-    "lifeExpectancyAv": 77.965389251709
+    "population": 146.3,
+    "lifeExpectancyM": 75.1,
+    "lifeExpectancyF": 80.8,
+    "lifeExpectancyAv": 77.94999999999999,
+    "happiness": 7.59,
+    "employment": 68.3,
+    "circulatoryDisease": 120
   },
   {
     "name": "Kensington & Chelsea",
-    "population": 129.614723576204,
-    "lifeExpectancyM": 83.723373413086,
-    "lifeExpectancyF": 87.75700378418,
-    "lifeExpectancyAv": 85.740188598633
+    "population": 129.6,
+    "lifeExpectancyM": 83.7,
+    "lifeExpectancyF": 87.8,
+    "lifeExpectancyAv": 85.75,
+    "happiness": 7.75,
+    "employment": 62.8,
+    "circulatoryDisease": 51
   },
   {
     "name": "Kingston upon Thames",
-    "population": 112.602020533967,
-    "lifeExpectancyM": 79.322982788086,
-    "lifeExpectancyF": 83.033584594727,
-    "lifeExpectancyAv": 81.1782836914065
+    "population": 112.6,
+    "lifeExpectancyM": 79.3,
+    "lifeExpectancyF": 83,
+    "lifeExpectancyAv": 81.15,
+    "happiness": 7.74,
+    "employment": 68.6,
+    "circulatoryDisease": 65
   },
   {
     "name": "Lambeth",
-    "population": 217.704504390907,
-    "lifeExpectancyM": 75.803016662598,
-    "lifeExpectancyF": 80.600631713867,
-    "lifeExpectancyAv": 78.20182418823251
+    "population": 217.7,
+    "lifeExpectancyM": 75.8,
+    "lifeExpectancyF": 80.6,
+    "lifeExpectancyAv": 78.19999999999999,
+    "happiness": 7.69,
+    "employment": 73.2,
+    "circulatoryDisease": 104
   },
   {
     "name": "Lewisham",
-    "population": 196.190484001883,
-    "lifeExpectancyM": 76.046463012695,
-    "lifeExpectancyF": 80.800888061523,
-    "lifeExpectancyAv": 78.423675537109
+    "population": 196.2,
+    "lifeExpectancyM": 76,
+    "lifeExpectancyF": 80.8,
+    "lifeExpectancyAv": 78.4,
+    "happiness": 7.67,
+    "employment": 68.7,
+    "circulatoryDisease": 102
   },
   {
     "name": "Merton",
-    "population": 143.10267982974,
-    "lifeExpectancyM": 79.715240478516,
-    "lifeExpectancyF": 83.041854858398,
-    "lifeExpectancyAv": 81.378547668457
+    "population": 143.1,
+    "lifeExpectancyM": 79.7,
+    "lifeExpectancyF": 83,
+    "lifeExpectancyAv": 81.35,
+    "happiness": 7.98,
+    "employment": 72,
+    "circulatoryDisease": 69
   },
   {
     "name": "Newham",
-    "population": 183.682355505202,
-    "lifeExpectancyM": 75.679084777832,
-    "lifeExpectancyF": 79.778953552246,
-    "lifeExpectancyAv": 77.729019165039
+    "population": 183.7,
+    "lifeExpectancyM": 75.7,
+    "lifeExpectancyF": 79.8,
+    "lifeExpectancyAv": 77.75,
+    "happiness": 7.75,
+    "employment": 55,
+    "circulatoryDisease": 129
   },
   {
     "name": "Redbridge",
-    "population": 178.064196195855,
-    "lifeExpectancyM": 78.337448120117,
-    "lifeExpectancyF": 82.399711608887,
-    "lifeExpectancyAv": 80.36857986450201
+    "population": 178.1,
+    "lifeExpectancyM": 78.3,
+    "lifeExpectancyF": 82.4,
+    "lifeExpectancyAv": 80.35,
+    "happiness": 7.74,
+    "employment": 63.5,
+    "circulatoryDisease": 73
   },
   {
     "name": "Richmond upon Thames",
-    "population": 133.934162628947,
-    "lifeExpectancyM": 79.978393554688,
-    "lifeExpectancyF": 83.816246032715,
-    "lifeExpectancyAv": 81.8973197937015
+    "population": 133.9,
+    "lifeExpectancyM": 80,
+    "lifeExpectancyF": 83.8,
+    "lifeExpectancyAv": 81.9,
+    "happiness": 7.93,
+    "employment": 75.2,
+    "circulatoryDisease": 62
   },
   {
     "name": "Southwark",
-    "population": 199.109679295497,
-    "lifeExpectancyM": 77.00511932373,
-    "lifeExpectancyF": 82.025115966797,
-    "lifeExpectancyAv": 79.5151176452635
+    "population": 199.1,
+    "lifeExpectancyM": 77,
+    "lifeExpectancyF": 82,
+    "lifeExpectancyAv": 79.5,
+    "happiness": 7.79,
+    "employment": 64.6,
+    "circulatoryDisease": 95
   },
   {
     "name": "Sutton",
-    "population": 132.568893717598,
-    "lifeExpectancyM": 78.677001953125,
-    "lifeExpectancyF": 82.556121826172,
-    "lifeExpectancyAv": 80.6165618896485
+    "population": 132.6,
+    "lifeExpectancyM": 78.7,
+    "lifeExpectancyF": 82.6,
+    "lifeExpectancyAv": 80.65,
+    "happiness": 7.91,
+    "employment": 73.8,
+    "circulatoryDisease": 82
   },
   {
     "name": "Tower Hamlets",
-    "population": 163.193536567418,
-    "lifeExpectancyM": 75.274467468262,
-    "lifeExpectancyF": 80.382873535156,
-    "lifeExpectancyAv": 77.828670501709
+    "population": 163.2,
+    "lifeExpectancyM": 75.3,
+    "lifeExpectancyF": 80.4,
+    "lifeExpectancyAv": 77.85,
+    "happiness": 7.82,
+    "employment": 60.1,
+    "circulatoryDisease": 120
   },
   {
     "name": "Waltham Forest",
-    "population": 160.166468518294,
-    "lifeExpectancyM": 75.938758850098,
-    "lifeExpectancyF": 80.994232177734,
-    "lifeExpectancyAv": 78.466495513916
+    "population": 160.2,
+    "lifeExpectancyM": 75.9,
+    "lifeExpectancyF": 81,
+    "lifeExpectancyAv": 78.45,
+    "happiness": 7.68,
+    "employment": 68.3,
+    "circulatoryDisease": 99
   },
   {
     "name": "Wandsworth",
-    "population": 221.160618849757,
-    "lifeExpectancyM": 76.881393432617,
-    "lifeExpectancyF": 81.407600402832,
-    "lifeExpectancyAv": 79.1444969177245
+    "population": 221.2,
+    "lifeExpectancyM": 76.9,
+    "lifeExpectancyF": 81.4,
+    "lifeExpectancyAv": 79.15,
+    "happiness": 7.72,
+    "employment": 76.4,
+    "circulatoryDisease": 98
   },
   {
     "name": "Westminster",
-    "population": 168.081709889194,
+    "population": 168.1,
     "lifeExpectancyM": 81.5,
-    "lifeExpectancyF": 84.576919555664,
-    "lifeExpectancyAv": 83.038459777832
+    "lifeExpectancyF": 84.6,
+    "lifeExpectancyAv": 83.05,
+    "happiness": 7.76,
+    "employment": 63,
+    "circulatoryDisease": 70
   }
 ]
